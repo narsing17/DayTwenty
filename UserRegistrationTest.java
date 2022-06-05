@@ -12,4 +12,9 @@ public class UserRegistrationTest {
         UserRegistration userRegistration = new UserRegistration();
         userRegistration.validateLastName("Kadam");
     }
-}
+        @Test
+        public void givenEmail_WhenProper_ShouldReturnTrue() {
+            UserRegistration userRegistration = new UserRegistration();
+            userRegistration.validateEmail("narsingp14@gmail.com");
+        }
+    }
