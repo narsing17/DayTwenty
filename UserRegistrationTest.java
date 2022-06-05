@@ -6,4 +6,10 @@ public class UserRegistrationTest {
         UserRegistration userRegistration = new UserRegistration();
         userRegistration.validateFirstName("Narsing");
     }
+
+    @Test
+    public void givenLastName_WhenProper_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.validateLastName("Kadam");
+    }
 }
